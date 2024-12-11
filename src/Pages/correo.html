@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener Link de Verificación KYC</title>
+    <style>
+        #kycLink {
+            margin-top: 20px;
+        }
+        .verification-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745; /* Color verde */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .verification-button:hover {
+            background-color: #218838; /* Color verde oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Obtener Link de Verificación KYC</h1>
+    
+    <button id="kycButton">Obtener link de Verificación KYC</button>
+    
+    <div id="kycLink"></div>
+
+    <script>
+        document.getElementById('kycButton').addEventListener('click', async function() {
+            const apiKey = 'bd2f01e809e6a946c92997f6dafa16e448db';  // Tu API key
+            const formId = '8358707b19257049490b9df5216b1ae5e3f8';   // Tu Form ID
+
+            try {
+                // Hacer la solicitud a la API de AML para obtener el link de verificación KYC
+                const response = await fetch('https://kyc-api.amlbot.com/forms/' + formId + '/urls', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Token ' + apiKey  // Usamos Bearer token
+                    }
+                });
+
+                const data = await response.json();
+                
+                // Imprimir la respuesta en la consola para verificar qué devuelve la API
+                console.log('Respuesta de la API:', data);
+
+                // Asegúrate de que la respuesta contenga el enlace esperado
+                if (data && data.form_url) {  // Verificamos si el campo 'form_url' está presente
+                    // Mostrar el enlace de verificación en la página como un botón
+                    document.getElementById('kycLink').innerHTML = 
+                        `<a href="${data.form_url}" class="verification-button" target="_blank">Ir a la verificación KYC</a>`;
+                } else {
+                    document.getElementById('kycLink').innerText = 'No se pudo obtener el enlace de verificación';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('kycLink').innerText = 'Error al conectar con la API';
+            }
+        });
+    </script>
+</body>
+</html>

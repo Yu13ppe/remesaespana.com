@@ -1,0 +1,42 @@
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Poppins';
+    margin: auto;
+    img {
+        width: 100%;
+    }
+
+    .four_zero_four_bg {
+        background-image: url('../Images/404.gif');
+        height: 400px;
+        background-position: center;
+        display: flex;
+    }
+
+    h1,
+    h3 {
+        margin-top: 15px;
+        font-size: 80px;
+    }
+
+    h1{
+        color: #409192;
+    }
+
+    .Linkss {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #409192;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .content_box_404 {
+        margin-top: -50px;
+    }
+
+}

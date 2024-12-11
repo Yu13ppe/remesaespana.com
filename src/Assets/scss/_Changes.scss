@@ -1,0 +1,387 @@
+
+/* Estilos generales del modal KYC */
+.kyc-modal {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kyc-modal-header {
+  background-color: #f0f4f7;
+  text-align: center  !important; 
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.kyc-modal-body {
+  padding: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.kyc-modal-content {
+  max-width: 100%;
+  margin: auto;
+}
+
+.kyc-modal-icon {
+  font-size: 48px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.kyc-modal-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.kyc-modal-text strong {
+  color: #333;
+}
+
+.kyc-modal-button {
+  background-color: #007bff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.kyc-modal-button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.modal-content1 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: all 0.3s ease;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 0.4s ease-out;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    max-width: 90%;
+  }
+}
+
+.modal-header1 {
+  background-color: #409192;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 1rem 2rem;
+  display: flex;
+  
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .close {
+    color: white;
+    font-size: 1.2rem;
+  }
+}
+
+.modal-body1 {
+  padding: 20px;
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.modal-footer1 {
+  border-top: none;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+}
+
+.kyc-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+
+  .kyc-animation {
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.modern-button {
+  font-size: 1rem;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.75s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: #409192;
+  border-color: #409192;
+
+  &:hover {
+    background-color: #31706e;
+    border-color: #31706e;
+  }
+}
+
+.btn-secondary {
+  background-color: #ababab;
+  border-color: #f0f0f0;
+
+  &:hover {
+    background-color: #d4d4d4;
+    color: #333;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.changesContainer {
+  background-color: #D1D1D1;
+  height: 100vh;
+
+  // Estilo base del modal
+  // Estilo base del modal de Reactstrap
+
+  
+
+
+  .changesMen {
+    position: relative;
+    z-index: 0;
+    float: right;
+    width: 350px;
+    top: 1.6em;
+    right: 15em;
+  }
+
+  .textchanges {
+    position: relative;
+    top: 1em;
+
+    h2 {
+      color: #212121;
+      font-family: 'Poppins';
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      margin-left: -4em;
+    }
+
+    h3 {
+      color: #212121;
+      font-family: Roboto;
+      font-size: 50px;
+      text-align: center;
+      margin-left: -4em;
+    }
+
+    h6 {
+      color: #212121;
+      font-family: Roboto;
+      font-size: 20px;
+      text-align: center;
+      margin-left: -10em;
+    }
+  }
+
+  .changes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    .Change-Input1 {
+      width: 60%;
+      position: relative;
+      top: 3em;
+      left: 10em;
+      margin-bottom: 1em;
+
+      .centered-input {
+        text-align: center
+      }
+
+      Input {
+        background-color: #fff;
+        color: #212121;
+        border: none;
+        box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 25px
+      }
+
+      Button {
+        border-radius: 50px;
+        background-color: #fff;
+        border: none;
+        box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .changesBtn {
+      position: relative;
+      top: 3em;
+      left: 16em;
+      margin-bottom: 1em;
+
+      Button {
+        border-radius: 10px;
+        border: none;
+        margin-right: 1.3em;
+
+        text-align: center;
+        font-family: Roboto;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+  }
+}
+
+/* CSS personalizado para hacer las imágenes más pequeñas solo en dispositivos móviles */
+@media (max-width: 768px) {
+  .modal-image1 {
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto; /* Escala automáticamente la altura */
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .changesContainer {
+    // margin-bottom: 20px;
+    height: 100vh;
+
+    .changesMen {
+      display: none;
+    }
+
+    .textchanges {
+
+      h2,
+      h3,
+      h6 {
+        margin-left: 0;
+        /* Resetear el margen izquierdo */
+        text-align: center;
+      }
+    }
+
+    .changes {
+      .Change-Input1 {
+        width: 100%;
+        /* Ancho completo en dispositivos móviles */
+        left: 0;
+        margin-bottom: 1em;
+
+        Input {
+          font-size: 20px;
+          /* Tamaño de fuente más pequeño para dispositivos móviles */
+        }
+
+        Button {
+          font-size: 20px;
+          /* Tamaño de fuente más pequeño para dispositivos móviles */
+        }
+      }
+
+      .changesBtn {
+        margin: auto; // width: 200px;
+        left: 20%;
+
+        Button {
+          width: 100px;
+          font-size: 20px;
+          /* Tamaño de fuente más pequeño para dispositivos móviles */
+        }
+      }
+    }
+  }
+}

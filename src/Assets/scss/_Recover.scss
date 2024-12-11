@@ -1,0 +1,182 @@
+
+.RecoverBody {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100vh;
+  background-image: url('../Images/LoginBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: "Euclid Circular A";
+  animation: rotate 6s infinite alternate linear;
+
+  a {
+    text-decoration: none;
+    color: #409192;
+  }
+
+}
+
+
+.card-recover {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 360px;
+  /* Usa max-width para limitar el ancho de la tarjeta */
+  margin: 0 auto;
+  /* Centra la tarjeta horizontalmente */
+  padding: 170px 30px 54px;
+  border-radius: 0 0 1.25rem 1.25rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card-recovertop {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 360px;
+  /* Usa max-width para limitar el ancho de la tarjeta */
+  margin: 0 auto;
+  /* Centra la tarjeta horizontalmente */
+  padding: 100px 10px 4px;
+  // border-radius: 1.25rem;
+  border-radius: 2rem 2rem 0px 0px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+
+  .parrafo-login {
+    margin-bottom: 1.5em;
+  }
+}
+
+
+.card-recover::before {
+  content: "";
+  position: absolute;
+  top: -880px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* Usa transform en lugar de translate */
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: #409192;
+}
+
+.card-recovertop::before {
+  content: "";
+  position: absolute;
+  bottom: -880px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: 900px;
+  z-index: -1;
+  /* Ajustar el valor del radio de borde para hacerlo menos redondeado */
+  background: #409192;
+  box-shadow: #2a3444;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+#RegisterA {
+  color: #409192;
+  text-decoration: none;
+}
+
+#RegisterA:hover {
+  color: #FFC10E;
+  text-decoration: none;
+}
+
+
+@media (width >=500px) {
+  .card-recover {
+    margin: 0;
+    width: 360px;
+  }
+}
+
+.card-recover .logo {
+  position: absolute;
+  top: .3em;
+  left: 50%;
+  translate: -50% 0;
+  width: 80px;
+}
+
+.card-recovertop .slogan {
+  position: absolute;
+  top: .6em;
+  left: 50%;
+  translate: -50% 0;
+  width: 250px;
+}
+
+.card-recover>h2 {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 0 30px;
+  color: #2a3444;
+}
+
+.form {
+  margin: 0 0 36px;
+  display: grid;
+  gap: 16px;
+}
+
+.form>input,
+.form>button {
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.form>input {
+  border: 2px solid #ebebeb;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0 24px;
+  color: #11274c;
+}
+
+.form>input::placeholder {
+  color: #cac8c8;
+}
+
+.form>button {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #FFC10E;
+  color: #212121;
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+
+.card-recover>footer {
+  color: #a1a1a1;
+}
+
+.card-recover>footer>a {
+  color: #216ce7;
+}
+
+.Recover:hover {
+  color: #FFC10E;
+}

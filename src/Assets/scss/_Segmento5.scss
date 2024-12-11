@@ -1,0 +1,20 @@
+.Segmento-5 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Evitar desbordamiento */
+        width: 100%; /* La imagen se ajustará automáticamente */
+    
+    img{
+        width: 50em;
+    }
+
+    @media screen and (max-width: 900px) {
+        img{
+            width: 25em;
+        }
+
+    }
+}
+

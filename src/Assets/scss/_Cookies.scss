@@ -1,0 +1,151 @@
+.CookiesBody {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+main {
+	margin: 20px auto;
+	max-width: 1000px;
+	background: #fff;
+	min-height: 80vh;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.aviso-cookies {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	text-align: center;
+}
+
+.aviso-cookies.activo {
+	display: block;
+}
+
+.aviso-cookies .galleta {
+	max-width: 50px;
+	position: absolute;
+	top: 5px;
+	left: calc(50% - 25px);
+}
+
+
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+	margin-bottom: 15px;
+}
+
+.aviso-cookies .boton {
+	width: 100%;
+	background: #595959;
+	border: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+	background: #000;
+}
+
+.aviso-cookies .enlace {
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+	display: none;
+	background: rgba(0,0,0,.20);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
+}
+
+
+
+}
+
+.cookies-main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+
+	
+  }
+  
+  .cookies-title {
+	font-size: 28px;
+	color: #333; /* Cambia el color del título según tu preferencia */
+  }
+  
+  .cookies-main p {
+	font-size: 16px;
+	color: #666; /* Cambia el color del texto según tu preferencia */
+	margin-bottom: 10px;
+  }
+  
+  .cookies-main a {
+	color: #007bff; /* Cambia el color del enlace según tu preferencia */
+	text-decoration: none;
+  }
+  
+  .cookies-main a:hover {
+	text-decoration: underline;
+
+	
+  }
+
+  .Linkss {
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	margin-left: 50%;
+	padding: 10px 20px ;
+	background: #409192;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+  

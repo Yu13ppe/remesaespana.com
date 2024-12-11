@@ -1,0 +1,111 @@
+.Segmento-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #FB9F22, #FFFF);
+    height: 100vh;
+    width: 100%;
+}
+
+.card1 {
+    max-width: 700px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 10px #033f49;
+    border-radius: 10px;
+    transition: 0.1s;
+    margin-bottom: 15px;
+}
+
+.card1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px #033f49;
+}
+
+.card1 .img-card {
+    background: url(../Images/howToSend.png);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    margin-right: 15px  ;
+
+}
+
+.card1 .content {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.card1 .content .title h3 {
+    color: #026e5e;
+}
+
+.card1 .content .title span {
+    color: #0089ba;
+    font-size: 12px;
+}
+
+.card1 .content .text li {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+
+.card1 .content .btn-container button {
+    background: #0089ba;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.card1 .content .btn-container button:hover {
+    background: #FB9F22;
+    transition: 0.9s;
+}
+
+/* Estilos para teléfonos */
+@media (max-width: 768px) {
+    .Segmento-3 {
+      min-height: auto; /* Eliminamos la altura mínima en dispositivos móviles */
+      height: auto; /* Eliminamos la altura fija en dispositivos móviles */
+      padding: 20px; /* Agregamos un relleno para separar el contenido de los bordes */
+  
+      .card1 {
+        max-width: 100%; /* Hacemos que la tarjeta ocupe todo el ancho de la pantalla */
+        height: auto; /* Dejamos que la altura de la tarjeta sea dinámica */
+        margin-bottom: 20px; /* Aumentamos el margen inferior para separar las tarjetas */
+      }
+  
+      .card1 .img-card {
+        width: 100%; /* La imagen ocupa todo el ancho en dispositivos móviles */
+        height: auto; /* La altura es dinámica para mantener la proporción */
+        margin-right: 0; /* Eliminamos el margen derecho */
+      }
+  
+      .card1 .content {
+        width: 100%; /* El contenido ocupa todo el ancho en dispositivos móviles */
+      }
+  
+      .card1 .content .text li {
+        font-size: 16px; /* Reducimos el tamaño de fuente del texto */
+      }
+  
+      .card1 .content .btn-container button {
+        margin-top: 20px;
+        font-size: 14px; /* Reducimos el tamaño de fuente del botón */
+      }
+
+      .card1 .img-card{
+        display: none;
+      }
+    }
+  }
+  

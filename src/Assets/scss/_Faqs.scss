@@ -1,0 +1,126 @@
+.BodyFaqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d1d1d1;
+
+    .container-faqs {
+        margin: 15px 40px;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .container-faqs h1 {
+        color: #409192;
+    }
+
+    .container-faqs .Tab {
+        position: relative;
+        background: #ffff;
+        padding: 0 20px 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .container-faqs .Tab Input {
+        appearance: none;
+    }
+
+    .container-faqs .Tab Label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .container-faqs .Tab Label::after {
+        content: '+';
+        position: absolute;
+        right: 20px;
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0);
+        transition: transform .4s;
+    }
+
+    .container-faqs .Tab:hover label::after {
+        color: #333;
+    }
+
+    .container-faqs .Tab Input:checked~Label::after {
+        transform: rotate(135deg);
+    }
+
+    .container-faqs .Tab Label h2 {
+        width: 40px;
+        height: 40px;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.25em;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .container-faqs .Tab:nth-child(2) Label h2 {
+        background-color: #FFC10E;
+    }
+
+    .container-faqs .Tab:nth-child(3) Label h2 {
+        background-color: #FFC10E;
+    }
+
+    .container-faqs .Tab:nth-child(4) Label h2 {
+        background-color: #FFC10E;
+    }
+
+    .container-faqs .Tab:nth-child(5) Label h2 {
+        background-color: #FFC10E;
+    }
+
+    .container-faqs .Tab:nth-child(1) Label h2 {
+        background-color: #FFC10E;
+    }
+
+    .container-faqs .Tab:hover:nth-child(2) Label h2 {
+        background-color: #409192;
+    }
+
+    .container-faqs .Tab:hover:nth-child(3) Label h2 {
+        background-color: #409192;
+    }
+
+    .container-faqs .Tab:hover:nth-child(4) Label h2 {
+        background-color: #409192;
+    }
+
+    .container-faqs .Tab:hover:nth-child(5) Label h2 {
+        background-color: #409192;
+    }
+
+    .container-faqs .Tab:hover:nth-child(1) Label h2 {
+        background-color: #409192;
+    }
+
+    .container-faqs .Tab Label h3 {
+        position: relative;
+        font-weight: 500;
+        color: #409192;
+        z-index: 10;
+    }
+
+    .container-faqs .Tab .content-faqs {
+        max-height: 0;
+        transition: max-height .4s ease-in-out;
+        overflow: hidden;
+    }
+
+    .container-faqs .Tab Input:checked~.content-faqs {
+        max-height: 100vh;
+    }
+}

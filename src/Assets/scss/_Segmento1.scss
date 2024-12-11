@@ -1,0 +1,184 @@
+.Segmento-1 {
+  background-image: url(../Images/backgroundOval.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(140vh - 90px);
+  min-width: 600px;
+
+  .Oval {
+    position: relative;
+    float: right;
+    width: 250px;
+    top: 5em;
+    right: 15em;
+  }
+
+  .text {
+    position: relative;
+    top: 3em;
+
+    h1 {
+      color: #212121;
+      font-family: 'Poppins';
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      margin-left: -5em;
+    }
+
+    h2 {
+      color: #212121;
+      font-family: Courgette;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      margin-left: -2em;
+    }
+
+    p {
+      color: #000;
+      text-align: center;
+      margin-top: 1em;
+      margin-left: -12em;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .Change-Input {
+    width: 34%;
+    position: relative;
+    top: 3em;
+    left: 15em;
+
+    Button {
+      border-radius: 20px;
+      background-color: #fff;
+      border: none;
+      box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+
+      color: #212121;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &:hover {
+        background-color: #409192;
+        transition: 0.9s;
+        color: #fff;
+      }
+    }
+
+    Input {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+      font-size: 25px;
+    }
+  }
+
+  .letsGo {
+    width: 23%;
+    position: relative;
+    top: 2em;
+    left: 9em;
+    background-color: #409192;
+    border: none;
+    border-radius: 25px;
+
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    font-family: Tw Cen MT Condensed;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+
+    &:hover {
+      background-color: #FFC10E;
+      transition: 0.9s;
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    /* Modificamos los estilos para dispositivos móviles */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100vh; /* Altura automática */
+    min-width: 0; /* Eliminamos el ancho mínimo */
+
+    .Oval {
+      display: none; /* Ocultamos el elemento en dispositivos móviles */
+    }
+
+    .text {
+      margin-top: 2em; /* Espaciado superior para separar el texto */
+      text-align: center;
+
+      h1 {
+        font-size: 32px; /* Reducimos el tamaño de fuente del título */
+        margin-left: 0;
+      }
+
+      h2 {
+        font-size: 32px; /* Reducimos el tamaño de fuente del subtítulo */
+        margin-left: 0;
+      }
+
+      p {
+        font-size: 18px; /* Reducimos el tamaño de fuente del párrafo */
+        margin-left: 0;
+      }
+    }
+
+    .Change-Input {
+      margin-left: 2px;
+      margin-right: 20px;
+      width: 100%; /* Aumentamos el ancho del input y el botón */
+      display: flex;
+      position: relative;
+      top: 3em; /* Ajustamos la posición vertical */
+      left: 0em;
+      // margin: auto;
+      justify-content: center;
+      text-align: center;
+
+      Button {
+        font-size: 20px;
+        // padding: 10px 20px; /* Ajustamos el espacio alrededor del botón */
+      }
+
+      Input {
+        font-size: 20px;
+         /* Aumentamos el ancho del input */
+      }
+    }
+
+    .letsGo {
+      
+      width: 40%; /* Aumentamos el ancho del botón */
+      display: flex;
+      position: relative;
+      top: 3em; /* Ajustamos la posición vertical */
+      left: 0em;
+      margin: auto;
+      justify-content: center;
+      text-align: center;
+
+      &:hover {
+        background-color: #FFC10E;
+      }
+    }
+  }
+}
