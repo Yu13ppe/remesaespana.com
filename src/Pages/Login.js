@@ -35,7 +35,9 @@ function Login() {
       return true; 
     } catch (error) {
       console.log(error);
-      return false; 
+      await axios.get(
+        `${url}/Auth/logout/${email}`
+      );
     }
   };
   
