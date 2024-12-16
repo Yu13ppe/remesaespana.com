@@ -15,7 +15,7 @@ import {
 } from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import { useDataContext } from '../Context/dataContext';
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import { NotFound404 } from './NotFound404';
 import Spain from '../Assets/Images/spain.png';
 import Uk from '../Assets/Images/uk.png';
@@ -240,7 +240,7 @@ function CurrencyUpdate() {
         <>
           {admin.adm_role === 'A' ? (
             <div>
-              <NavBar />
+              <NavBarAdm />
               <ul className="nav nav-tabs">
                 <li className="nav-item">
                   <button

@@ -16,7 +16,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios'
 import { AiOutlineClockCircle } from 'react-icons/ai'
 import { useDataContext } from '../Context/dataContext'
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import { Spinner } from '../Components/Spinner'; // Ajusta la ruta de importación según tu estructura de archivos
 
 
@@ -335,7 +335,7 @@ function UserNoVerificated() {
         <>
           {admin.adm_role === 'A' || admin.adm_role === 'C' ? (
             <div>
-              <NavBar />
+              <NavBarAdm />
               <div className='userContent'>
                 <h1 className='titleUser'>
                   Usuarios

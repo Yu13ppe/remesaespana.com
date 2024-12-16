@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import { useDataContext } from '../Context/dataContext';
 import { NotFound404 } from './NotFound404';
 import { toast, ToastContainer } from 'react-toastify';
@@ -521,7 +521,7 @@ function Relation() {
         <>
           {admin.adm_role === 'A' ? (
             <div>
-              <NavBar />
+              <NavBarAdm />
               <div className='userContent'>
                 <h1 className='titleUser'>Relación</h1>
                 <div className="container">

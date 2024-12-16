@@ -19,7 +19,7 @@ import { NotFound404 } from './NotFound404';
 import { AiOutlineCheckCircle, AiOutlineClockCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
 import { useDataContext } from '../Context/dataContext';
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import {Spinner} from '../Components/Spinner'; // Ajusta la ruta de importación según tu estructura de archivos
 
 
@@ -244,7 +244,7 @@ function Users() {
       <>
         {admin.adm_role === 'A' ? (
           <div>
-            <NavBar />
+            <NavBarAdm />
         <div className='userContent'>
           <h1 className='titleUser'>
             Usuarios

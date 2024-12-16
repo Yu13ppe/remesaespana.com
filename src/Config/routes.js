@@ -4,7 +4,6 @@ import { Faqs } from '../Pages/Faqs';
 import { Recover } from '../Pages/Recover';
 import { Register } from '../Pages/Register';
 import { Changes } from '../Pages/Changes';
-import { Profile } from '../Pages/Profile';
 import { AdmRe } from '../Pages/AdmRe';
 import { Users } from '../Pages/Users';
 import { Dashboard } from '../Pages/Dashboard';
@@ -90,11 +89,6 @@ const routes = [
         title: 'Cookies',
         path: '/Cookies',
         component: Cookies,
-    },
-    {
-        title: 'Profile',
-        path: '/Profile',
-        component: Profile,
     },
     {
         title: 'Changes',

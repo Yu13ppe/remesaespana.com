@@ -18,7 +18,7 @@ import { FaArrowDown, FaArrowUp, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { useDataContext } from "../Context/dataContext";
-import { NavBar } from "../Components/NavBar";
+import { NavBarAdm } from "../Components/NavBarAdm";
 import { NotFound404 } from "./NotFound404";
 import { Spinner } from "../Components/Spinner";
 
@@ -633,7 +633,7 @@ function Dashboard() {
         <>
           {admin.adm_role === "A" ? (
             <>
-              <NavBar />
+              <NavBarAdm />
               <div className="DashboardBody">
                 <Container>
                   <center>
@@ -1103,7 +1103,7 @@ function Dashboard() {
             </>
           ) : admin.adm_role === "C" ? (
             <>
-              <NavBar />
+              <NavBarAdm />
               <div className="DashboardBody">
                 <Container>
                   <center>
@@ -1315,7 +1315,7 @@ function Dashboard() {
             </>
           ) : admin.adm_role === "B" ? (
             <>
-              <NavBar />
+              <NavBarAdm />
               <div className="DashboardBody">
                 <Container>
                   <center>

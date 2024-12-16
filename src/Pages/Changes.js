@@ -688,6 +688,8 @@ const formId = "8a53986012e6114ab709816170bac18316e0";
     formData.append("mov_amount", sendAmount);
     formData.append("mov_type", "Retiro");
     formData.append("mov_status", "E");
+    formData.append("mov_code", "");
+    formData.append("mov_phone", "");
   
     const selectedAccount = accounts.find(
       (account) =>
@@ -736,6 +738,7 @@ const formId = "8a53986012e6114ab709816170bac18316e0";
     formData.append("mov_accUsdId", payment === "USD" ? 99 : 0);
     formData.append("mov_accGbpId", payment === "GBP" ? 99 : 0);
     formData.append("mov_userId", user.use_id);
+
   
     const formDataUser = new FormData();
     if (sendOption === "Efectivo") {

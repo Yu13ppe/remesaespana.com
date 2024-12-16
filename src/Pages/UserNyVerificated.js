@@ -7,7 +7,7 @@ import {
 import axios from 'axios';
 import { FaTimes } from 'react-icons/fa'; // Usado para la "X"
 import { useDataContext } from '../Context/dataContext';
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import { Spinner } from '../Components/Spinner';
 import { NotFound404 } from './NotFound404';
 
@@ -147,7 +147,7 @@ function UserNyVerificated() {
         <Spinner />
       ) : (
         <>
-          <NavBar />
+          <NavBarAdm />
           <div className='userContent'>
             <h1 className='titleUser'>Usuarios</h1>
             <div className="container">

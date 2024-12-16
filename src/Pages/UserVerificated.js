@@ -16,7 +16,7 @@ import axios from 'axios'
 import { AiOutlineCheckCircle, AiOutlineCloseCircle, AiOutlineClockCircle } from 'react-icons/ai'
 import { FaArrowDown, FaArrowUp } from 'react-icons/fa'
 import { useDataContext } from '../Context/dataContext'
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import {Spinner} from '../Components/Spinner'; // Ajusta la ruta de importación según tu estructura de archivos
 
 
@@ -230,7 +230,7 @@ function UserVerificated() {
       <>
         {admin.adm_role === 'A' ? (
           <div>
-            <NavBar />
+            <NavBarAdm />
         <div className='userContent'>
           <h1 className='titleUser'>
             Usuarios

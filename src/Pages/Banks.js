@@ -18,7 +18,7 @@ import {
 } from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import { useDataContext } from '../Context/dataContext';
-import { NavBar } from '../Components/NavBar';
+import { NavBarAdm } from '../Components/NavBarAdm';
 import { NotFound404 } from './NotFound404';
 import { Spinner } from '../Components/Spinner';
 import BBVA from '../Assets/Images/Banks/BBVA.png'
@@ -606,7 +606,7 @@ function Banks() {
         <>
           {admin.adm_role === 'A' ? (
             <div>
-              <NavBar />
+              <NavBarAdm />
               <div className="BanksBody">
                 <Container>
                   <h1 className="my-4">Cuentas bancarias</h1>
