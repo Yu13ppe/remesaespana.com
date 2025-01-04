@@ -8,7 +8,7 @@ export function DataContextProvider(props) {
     const [accessAdminToken, setAccessAdminToken] = useLocalStorage("130328073103", '');
     const [logged, setLogged] = useLocalStorage('log', false);
     const [currencyPrice, setCurrencyPrice] = useState([]);
-    const url = 'https://apiremesa-pruebas.up.railway.app'; 
+    const url = 'https://apiremesa.up.railway.app'; 
     // https://apiremesa.up.railway.app
     const value = {
         logged, setLogged, 

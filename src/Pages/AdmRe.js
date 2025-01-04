@@ -30,8 +30,12 @@ function AdmRe() {
         }
       });
     } catch (error) {
-      throw new Error("Inicio de sesión fallido");
+      console.log(error);
+      await axios.get(
+        `${url}/Auth/logoutAdmin/${email}`
+      );
     }
+    
   };
   
 

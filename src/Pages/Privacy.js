@@ -20,16 +20,6 @@ function Privacy() {
                     <li>Nunca utilizo tus datos personales con una finalidad diferente a la expresada en esta política de privacidad.</li>
                 </ul>
 
-                <h3>Responsable del Tratamiento de Datos</h3>
-                <p>
-                    <strong>Identidad del Responsable:</strong> Mauro Daddosio <br />
-                    <strong>Nombre Comercial:</strong> remesaespana.com <br />
-                    <strong>NIF/NIE:</strong> Y6728393X <br />
-                    <strong>Dirección:</strong> Mudela 1, piso 5, código postal 28053 <br />
-                    <strong>Correo Electrónico:</strong> info@remesaespana.com <br />
-                    <strong>Actividad:</strong> Intermediación financiera
-                </p>
-
                 <h3>¿Cómo he obtenido tus datos?</h3>
                 <p>Los datos personales que trato en remesaespana.com provienen de:</p>
                 <ul>
