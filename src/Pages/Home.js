@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
+// import axios from 'axios';
 import {
-  InputGroup,
-  Input,
+  // InputGroup,
+  // Input,
   Button
 } from 'reactstrap';
 import Reasons01 from '../Assets/Images/Reasons-01.png';
@@ -18,12 +18,12 @@ import {
   FaInstagram,
   FaWhatsapp
 } from 'react-icons/fa';
-import Spain from '../Assets/Images/spain.png'
-import Uk from '../Assets/Images/uk.png'
-import Venezuela from '../Assets/Images/venezuela.png'
+// import Spain from '../Assets/Images/spain.png'
+// import Uk from '../Assets/Images/uk.png'
+// import Venezuela from '../Assets/Images/venezuela.png'
 import Oval from '../Assets/Images/Oval.png'
-import EEUU from '../Assets/Images/usa.png';
-import { useDataContext } from '../Context/dataContext';
+// import EEUU from '../Assets/Images/usa.png';
+// import { useDataContext } from '../Context/dataContext';
 import { NavBar } from '../Components/NavBar';
 import { Footer } from '../Components/Footer';
 import { Link } from 'react-router-dom'
@@ -32,36 +32,36 @@ import { CookiesC } from '../Components/CookiesC';
 import { Contact } from '../Components/Contact';
 
 function Home() {
-  const [currencyImage, setCurrencyImage] = useState(Spain);
-  const { currencyPrice, setCurrencyPrice, url } = useDataContext();
+  // const [currencyImage, setCurrencyImage] = useState(Spain);
+  // const { currencyPrice, setCurrencyPrice, url } = useDataContext();
 
-  const handleCurrencyChange = () => {
-    if (currencyImage === Spain) {
-      setCurrencyImage(EEUU);
-    } else if (currencyImage === EEUU) {
-      setCurrencyImage(Uk);
-    } else {
-      setCurrencyImage(Spain);
-    }
-  };
+  // const handleCurrencyChange = () => {
+  //   if (currencyImage === Spain) {
+  //     setCurrencyImage(EEUU);
+  //   } else if (currencyImage === EEUU) {
+  //     setCurrencyImage(Uk);
+  //   } else {
+  //     setCurrencyImage(Spain);
+  //   }
+  // };
 
-  const fetchData = useCallback(async () => {
-    try {
-      const response = await axios.get(`${url}/currencyPrice`);
-      setCurrencyPrice(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }, [setCurrencyPrice, url]); // Agregar setCurrencyPrice como dependencia
+  // const fetchData = useCallback(async () => {
+  //   try {
+  //     const response = await axios.get(`${url}/currencyPrice`);
+  //     setCurrencyPrice(response.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }, [setCurrencyPrice, url]); // Agregar setCurrencyPrice como dependencia
 
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
-    fetchData();
+    // fetchData();
     setTimeout(() => {
       setIsLoading(false);
     }, 1300); // Simula que la carga demora 2 segundos
-  }, [fetchData]); // Agregar fetchData como dependencia
+  }, []); // Agregar fetchData como dependencia
 
 
 
@@ -87,7 +87,7 @@ function Home() {
               <p>Líder en envíos de divisas en Europa a  <br /> Venezuela y E.E.U.U</p>
             </div>
             <div>
-              <InputGroup className='Change-Input'>
+              {/*<InputGroup className='Change-Input'>
                 <Button onClick={handleCurrencyChange}>
                   {currencyImage === Spain ?
                     <span><img src={Spain} alt='Spain' width={45} /> €</span> : null}
@@ -111,7 +111,7 @@ function Home() {
                 <Button>
                   Bs <img src={Venezuela} alt='Venezuela' width={45} />
                 </Button>
-              </InputGroup>
+              </InputGroup>*/}
 
               <Link to='/Login'>
                 <Button className='letsGo'>
